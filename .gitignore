@@ -13,4 +13,4 @@ storage.db
 *.crt
 media
 dist
-django_liqpay.egg-info
+django_payeer.egg-info

@@ -57,7 +57,8 @@ class PayeerApi(object):
             amount,
             currency,
             description,
-            language=None):
+            language=None,
+            **kwargs):
 
         self.validate_wallet(self._account)
 
@@ -90,6 +91,8 @@ class PayeerApi(object):
             'm_sign': signature,
             'lang': data['language']
         }
+
+        params.update(kwargs)
 
         return self.merchant_url + urlencode(params)
 
