@@ -51,7 +51,7 @@ class PayeerApi(object):
 
         return hash_str.hexdigest().upper()
 
-    def generate_merchant_url(
+    def merchant(
             self,
             order_id,
             amount,
@@ -94,7 +94,11 @@ class PayeerApi(object):
 
         params.update(kwargs)
 
-        return self.merchant_url + urlencode(params)
+        return {
+            'location': self.merchant_url + urlencode(params),
+            'signature': signature,
+            'description': description
+        }
 
 
 payeer_api = PayeerApi(
