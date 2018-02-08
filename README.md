@@ -43,3 +43,6 @@ payeer_api.merchant returns:
 
 App require this packages:
 * django
+
+### Donators
+* Andriy Onishchuk
