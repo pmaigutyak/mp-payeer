@@ -1,0 +1,16 @@
+.idea
+*.pyc
+*.bak
+*.bat
+.pydevproject
+.project
+.settings
+.directory
+*.fcgi
+.DS_Store
+storage.db
+*.pem
+*.crt
+media
+dist
+django_liqpay.egg-info
