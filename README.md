@@ -24,11 +24,19 @@ PAYEER = {
 from payeer.api import payeer_api
 from payeer.constants import CURRENCY_USD
 
-url = payeer_api.generate_merchant_url(
+data = payeer_api.merchant(
         order_id=123,
         amount=10,
         currency=CURRENCY_USD,
         description='Test')
+```
+payeer_api.merchant returns:
+```
+{
+    'location': '...', # redirect url
+    'signature': '...', # generated signature
+    'description': '...' # generated description
+}
 ```
 
 ### Requirements
