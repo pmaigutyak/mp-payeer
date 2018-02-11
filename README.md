@@ -1,6 +1,7 @@
 # MP-Payeer
 
 Django payeer integration app.
+Official docs: https://payeercom.docs.apiary.io
 
 ## Installation
 
